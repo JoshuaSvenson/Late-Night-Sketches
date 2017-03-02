@@ -8,9 +8,9 @@
 	
 	<body>
 		<div class="tab">
-		  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'NBC')">NBC</a>
-		  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'CBS')">CBS</a>
-		  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'ABC')">ABC</a>
+		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'NBC')">NBC</a>
+		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'CBS')">CBS</a>
+		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'ABC')">ABC</a>
 		</div>
 	
 		<div id="NBC" class="tabcontent">
@@ -26,11 +26,11 @@
 			
 			<div id="Box_of_Lies_content" class="game_content">
 				<div id="Box_of_Lies_Guest_List" class="guest_list_box">
-					<h4>2017</h4>
+					<h4 class="guest_list_year">2017</h4>
 					<ul class="guest_list">
 						<li>Alec Baldwin</li>
 					</ul>
-					<h4>2016</h4>
+					<h4 class="guest_list_year">2016</h4>
 					<ul class="guest_list">
 						<li>Megyn Kelly</li>
 						<li>Emily Blunt</li>
@@ -39,7 +39,7 @@
 						<li>Russell Crowe</li>
 						<li>Vince Vaughn</li>
 					</ul>
-					<h4>2015</h4>
+					<h4 class="guest_list_year">2015</h4>
 					<ul class="guest_list">
 						<li>Adele</li>
 						<li>Julianne Moore</li>
@@ -47,7 +47,7 @@
 						<li>Scarlett Johansson</li>
 						<li>Nicole Kidman</li>
 					</ul>
-					<h4>2014</h4>
+					<h4 class="guest_list_year">2014</h4>
 					<ul class="guest_list">
 						<li>Channing Tatum</li>
 						<li>Emma Stone</li>
@@ -56,7 +56,7 @@
 						<li>Jennifer Lawrence</li>
 						<li>Melissa McCarthy</li>
 					</ul>
-					<h4>2013</h4>
+					<h4 class="guest_list_year">2013</h4>
 					<ul class="guest_list">
 						<li>Julie Bowen</li>
 						<li>Tina Fey</li>
@@ -71,48 +71,48 @@
 						</div>
 						<div class="Box_of_Lies_description_box">
 							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_first_box_9.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">"A very thick, red, gelatinous teddy bear, swaddled in a blanket, with a binky in its mouth."</p>
-								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Alec told the Truth</p>
-								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Jimmy's Guess: Lie</p>
-								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Alec: 1  Jimmy: 0</h3>
-								</div>
-							</div>
-							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_second_box_4.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">A surgical glove filled with pimento olives with a ring on it.</p>
-								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Jimmy's Lie: "In my box is what I assume to be shavings of pickle in the shape of a welcome mat. A tiny welcome mat for, possibly, a doll house. Could be shavings of... I think its pickle. The word that's written on the mat, it says, Ermagerd Welcome."</p>
-								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Alec's Guess: Lie</p>
-								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Alec: 2  Jimmy: 0</h3>
+								<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_first_box_9.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"A very thick, red, gelatinous teddy bear, swaddled in a blanket, with a binky in its mouth."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Alec told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Alec: 1  Jimmy: 0</h3>
+									</div>
 								</div>
 							</div>
 							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_third_box_1.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">It's a Chewbacca mask wearing a blonde wig.</p>
+								<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_second_box_4.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>A surgical glove filled with pimento olives with a ring on it.</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Jimmy's Lie: "In my box is what I assume to be shavings of pickle in the shape of a welcome mat. A tiny welcome mat for, possibly, a doll house. Could be shavings of... I think its pickle. The word that's written on the mat, it says, Ermagerd Welcome."</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Alec's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Alec: 2  Jimmy: 0</h3>
+									</div>
 								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Alec's Lie: "Jimmy it's a burrito. It's a really big, fat, juicy burrito filled with bananas. It's a banana burrito. It's a big fat juicy banana burrito from Honduras."</p>
-								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Jimmy's Guess: Lie</p>
-								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Alec: 2  Jimmy: 1</h3>
+							</div>
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Alec_Baldwin\baldwin_third_box_1.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>It's a Chewbacca mask wearing a blonde wig.</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Alec's Lie: "Jimmy it's a burrito. It's a really big, fat, juicy burrito filled with bananas. It's a banana burrito. It's a big fat juicy banana burrito from Honduras."</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Alec: 2  Jimmy: 1</h3>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -126,48 +126,103 @@
 						</div>
 						<div class="Box_of_Lies_description_box">
 							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Megyn_Kelly\kelly_first_box_4.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">"In my container is a half moose half dinosaur covered in iPhones."</p>
-								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Megyn told the Truth</p>
-								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Jimmy's Guess: Truth</p>
-								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Megyn: 0  Jimmy: 1</h3>
-								</div>
-							</div>
-							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Megyn_Kelly\kelly_second_box_6.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">"It's a Furby with one of those beer hats on its head."</p>
-								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Jimmy told the Truth</p>
-								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Megyn's Guess: Lie</p>
-								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Megyn: 0  Jimmy: 2</h3>
+								<img src="images\Box_of_Lies\Megyn_Kelly\kelly_first_box_4.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"In my container is a half moose half dinosaur covered in iPhones."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Megyn told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Megyn: 0  Jimmy: 1</h3>
+									</div>
 								</div>
 							</div>
 							<div class="Box_of_Lies_item">
-								<div class="Box_of_Lies_item_picture_description">
-									<img src="images\Box_of_Lies\Megyn_Kelly\kelly_third_box_8.png" class="box_of_lies_image">
-									<p class="Box_of_Lies_description">"In that container is a deck of cards with a liquid tube stuck through the middle."</p>
+								<img src="images\Box_of_Lies\Megyn_Kelly\kelly_second_box_6.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"It's a Furby with one of those beer hats on its head."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Jimmy told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Megyn's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Megyn: 0  Jimmy: 2</h3>
+									</div>
 								</div>
-								<div class="Box_of_Lies_item_truth_or_lie">
-									<p>Megyn told the Truth</p>
+							</div>
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Megyn_Kelly\kelly_third_box_8.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"In that container is a deck of cards with a liquid tube stuck through the middle."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Megyn told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Megyn: 1  Jimmy: 2</h3>
+									</div>
 								</div>
-								<div class="Box_of_Lies_item_contestant_guess">
-									<p>Jimmy's Guess: Lie</p>
+							</div>
+						</div>
+					</div>
+					
+					<div id="Box_of_Lies_Emily_Blunt" class="Box_of_Lies_games">
+						<div class="Box_of_Lies_video_box">
+							<h2 class="guest_name">Emily Blunt</h2>
+							<h3 class="episode_number">Ep.546 October 3, 2016</h3>
+							<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/9sdTWCmhJ8Y" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<div class="Box_of_Lies_description_box">
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Emily_Blunt\blunt_first_box_4.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"It actually happens to be a record player with a pizza on it and the pizza's spinning. It's a pepperoni pizza."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Emily told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Emily: 1  Jimmy: 0</h3>
+									</div>
 								</div>
-								<div class="Box_of_Lies_item_score">
-									<h3>Megyn: 1  Jimmy: 2</h3>
+							</div>
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Emily_Blunt\blunt_second_box_3.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>"In my box it's another box and inside that box is another box. It's interesting because the number 3...three boxes...three boxes."</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Jimmy told the Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Emily's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Emily: 1  Jimmy: 1</h3>
+									</div>
+								</div>
+							</div>
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Emily_Blunt\blunt_third_box_5.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p >It's Frankenstein wearing a clown costume.</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Emily's Lie: "It is a my little pony with a syringe stuck in it."</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Emily: 1  Jimmy: 2</h3>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -175,7 +230,6 @@
 					
 				</div>
 			</div>	
-			
 		</div>
 		
 		<div id="CBS" class="tabcontent">
@@ -193,5 +247,6 @@
 			<h3>ABC</h3>
 			<p>ABC page</p>
 		</div>
+		<a href="javascript:void(0)" class="next" onclick="changeGuest(event)">Next</a>
 	<body>
 <html>
