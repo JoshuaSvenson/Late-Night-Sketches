@@ -19,13 +19,19 @@ function openNetwork(evt, networkName) {
     evt.currentTarget.className += " active";
 }
 
-function changeGuest(evt) {
+function changeGuestRight(evt) {
 	var Box_of_Lies_games
 	
 	Box_of_Lies_games = document.getElementsByClassName("Box_of_Lies_games");
-	
+
     for (i = 0; i < Box_of_Lies_games.length; i++) {
 		if(Box_of_Lies_games[i].style.display !== "none" && i+1 < Box_of_Lies_games.length){
+			/*if(i == Box_of_Lies_games.length - 2){
+				document.getElementsById('box_of_lies_arrow_image_right').style.visibility = "hidden";
+			}
+			else if(i == 0){
+				document.getElementById('l'+ (i+1)).style.visibility = 'visible';
+			}*/
 			Box_of_Lies_games[i].style.display = "none";
 			Box_of_Lies_games[i+1].style.display = "block";
 			break;
@@ -34,4 +40,36 @@ function changeGuest(evt) {
 			Box_of_Lies_games[i].style.display = "none";
 		}
     }	
+}
+
+function changeGuestLeft(evt) {
+	var Box_of_Lies_games
+	
+	Box_of_Lies_games = document.getElementsByClassName("Box_of_Lies_games");
+	
+    for (i = 0; i < Box_of_Lies_games.length; i++) {
+		
+		if(Box_of_Lies_games[i].style.display !== "none" && i > 0){
+			Box_of_Lies_games[i].style.display = "none";
+			Box_of_Lies_games[i-1].style.display = "block";
+			break;
+		}
+		else{
+			Box_of_Lies_games[i].style.display = "none";
+		}
+    }	
+}
+
+function goToGuest(evt, guestNameId){
+	var guest, Box_of_Lies_games;
+
+	guest = document.getElementById(guestNameId);
+
+	Box_of_Lies_games = document.getElementsByClassName("Box_of_Lies_games");
+	
+    for (i = 0; i < Box_of_Lies_games.length; i++) {
+		Box_of_Lies_games[i].style.display = "none";
+    }	
+	
+	guest.style.display = 'block';
 }

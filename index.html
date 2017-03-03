@@ -8,58 +8,72 @@
 	
 	<body>
 		<div class="tab">
-		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'NBC')">NBC</a>
-		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'CBS')">CBS</a>
-		  <a href="javascript:void(0)" class="tablinks" onclick="openNetwork(event, 'ABC')">ABC</a>
+		  <a href="javascript:void(0)" id="nbc_tablink" class="tablinks" onclick="openNetwork(event, 'NBC')">NBC</a>
+		  <a href="javascript:void(0)" id="cbs_tablink" class="tablinks" onclick="openNetwork(event, 'CBS')">CBS</a>
+		  <a href="javascript:void(0)" id="abc_tablink" class="tablinks" onclick="openNetwork(event, 'ABC')">ABC</a>
 		</div>
 	
 		<div id="NBC" class="tabcontent">
-			<div id="NBC showbar" class="showbar">
+			<div id="NBC_showbar" class="showbar">
 				<ul>
 					<li class="show_link">The Tonight Show with Jimmy Fallon</li>
 					<li class="show_link">Late Night with Seth Meyers</li>
 				</ul>
 			</div>
+			<div id="Tonight_Show_gamebar" class="gamebar">
+				<ul>
+					<li class="game_link">Box of Lies</li>
+					<li class="game_link">Flip Cup</li>
+				</ul>
+			</div>
 			<div id="Box_of_Lies_header" class="gameHeader">
-				<h2>Box of Lies</h2>
+				<h2 class="game_header_name">Box of Lies</h2>
 			</div>
 			
 			<div id="Box_of_Lies_content" class="game_content">
 				<div id="Box_of_Lies_Guest_List" class="guest_list_box">
 					<h4 class="guest_list_year">2017</h4>
 					<ul class="guest_list">
-						<li>Alec Baldwin</li>
+						<a href="javascript:void(0)" onclick="goToGuest(event, 'Box_of_Lies_Alec_Baldwin')">
+							<li class="Box_of_Lies_guest_list_items">Alec Baldwin</li>
+						</a>
 					</ul>
 					<h4 class="guest_list_year">2016</h4>
 					<ul class="guest_list">
-						<li>Megyn Kelly</li>
-						<li>Emily Blunt</li>
-						<li>Matt Damon</li>
-						<li>Lena Dunham</li>
-						<li>Russell Crowe</li>
-						<li>Vince Vaughn</li>
+						<a href="javascript:void(0)" onclick="goToGuest(event, 'Box_of_Lies_Megyn_Kelly')">
+							<li class="Box_of_Lies_guest_list_items">Megyn Kelly</li>
+						</a>
+						<a href="javascript:void(0)" onclick="goToGuest(event, 'Box_of_Lies_Emily_Blunt')">
+							<li class="Box_of_Lies_guest_list_items">Emily Blunt</li>
+						</a>
+						<a href="javascript:void(0)" onclick="goToGuest(event, 'Box_of_Lies_Matt_Damon')">
+							<li class="Box_of_Lies_guest_list_items">Matt Damon</li>
+						</a>
+							<li class="Box_of_Lies_guest_list_items">Lena Dunham</li>
+							<li class="Box_of_Lies_guest_list_items">Russell Crowe</li>
+							<li class="Box_of_Lies_guest_list_items">Vince Vaughn</li>
 					</ul>
 					<h4 class="guest_list_year">2015</h4>
 					<ul class="guest_list">
-						<li>Adele</li>
-						<li>Julianne Moore</li>
-						<li>Heidi Klum</li>
-						<li>Scarlett Johansson</li>
-						<li>Nicole Kidman</li>
+							<li class="Box_of_Lies_guest_list_items">Adele</li>
+							<li class="Box_of_Lies_guest_list_items">Julianne Moore</li>
+							<li class="Box_of_Lies_guest_list_items">Heidi Klum</li>
+							<li class="Box_of_Lies_guest_list_items">Scarlett Johansson</li>
+							<li class="Box_of_Lies_guest_list_items">Nicole Kidman</li>
 					</ul>
 					<h4 class="guest_list_year">2014</h4>
 					<ul class="guest_list">
-						<li>Channing Tatum</li>
-						<li>Emma Stone</li>
-						<li>Kerry Washington</li>
-						<li>Kate Hudson</li>
-						<li>Jennifer Lawrence</li>
-						<li>Melissa McCarthy</li>
+							<li class="Box_of_Lies_guest_list_items">Channing Tatum</li>
+							<li class="Box_of_Lies_guest_list_items">Emma Stone</li>
+							<li class="Box_of_Lies_guest_list_items">Kerry Washington</li>
+							<li class="Box_of_Lies_guest_list_items">Kate Hudson</li>
+							<li class="Box_of_Lies_guest_list_items">Jennifer Lawrence</li>
+							<li class="Box_of_Lies_guest_list_items">Melissa McCarthy</li>
 					</ul>
 					<h4 class="guest_list_year">2013</h4>
 					<ul class="guest_list">
-						<li>Julie Bowen</li>
-						<li>Tina Fey</li>
+							<li class="Box_of_Lies_guest_list_items">Julie Bowen</li>
+							<li class="Box_of_Lies_guest_list_items">Tina Fey</li>
 					</ul>
 				</div>
 				<div id="Box_of_Lies_games" class="games">
@@ -67,7 +81,15 @@
 						<div class="Box_of_Lies_video_box">
 							<h2 class="guest_name">Alec Baldwin</h2>
 							<h3 class="episode_number">Ep.621 February 9, 2017</h3>
-							<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/D8p2D7zImGU" frameborder="0" allowfullscreen></iframe>	
+							<div class="video_and_arrows">
+								<a href="javascript:void(0)" class="next" onclick="changeGuestLeft(event)">
+									<img src="images\General\left-arrow.png" id="left-arrow-1" class="box_of_lies_arrow_image">
+								</a>
+								<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/D8p2D7zImGU" frameborder="0" allowfullscreen></iframe>	
+								<a href="javascript:void(0)" class="next" onclick="changeGuestRight(event)">
+									<img src="images\General\right-arrow.png" id="right-arrow-1" class="box_of_lies_arrow_image">
+								</a>
+							</div>	
 						</div>
 						<div class="Box_of_Lies_description_box">
 							<div class="Box_of_Lies_item">
@@ -122,7 +144,15 @@
 						<div class="Box_of_Lies_video_box">
 							<h2 class="guest_name">Megyn Kelly</h2>
 							<h3 class="episode_number">Ep.574 November 18, 2016</h3>
-							<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/nZFJdVnyA4g" frameborder="0" allowfullscreen></iframe>	
+							<div class="video_and_arrows">
+								<a href="javascript:void(0)" class="next" onclick="changeGuestLeft(event)">
+									<img src="images\General\left-arrow.png" id="left-arrow-2" class="box_of_lies_arrow_image">
+								</a>
+								<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/nZFJdVnyA4g" frameborder="0" allowfullscreen></iframe>	
+								<a href="javascript:void(0)" class="next" onclick="changeGuestRight(event)">
+									<img src="images\General\right-arrow.png" id="right-arrow-2" class="box_of_lies_arrow_image">
+								</a>
+							</div>
 						</div>
 						<div class="Box_of_Lies_description_box">
 							<div class="Box_of_Lies_item">
@@ -177,7 +207,15 @@
 						<div class="Box_of_Lies_video_box">
 							<h2 class="guest_name">Emily Blunt</h2>
 							<h3 class="episode_number">Ep.546 October 3, 2016</h3>
-							<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/9sdTWCmhJ8Y" frameborder="0" allowfullscreen></iframe>
+							<div class="video_and_arrows">
+								<a href="javascript:void(0)" class="next" onclick="changeGuestLeft(event)">
+									<img src="images\General\left-arrow.png" id="left-arrow-3" class="box_of_lies_arrow_image">
+								</a>
+								<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/9sdTWCmhJ8Y" frameborder="0" allowfullscreen></iframe>	
+								<a href="javascript:void(0)" class="next" onclick="changeGuestRight(event)">
+									<img src="images\General\right-arrow.png" id="right-arrow-3" class="box_of_lies_arrow_image">
+								</a>
+							</div>
 						</div>
 						<div class="Box_of_Lies_description_box">
 							<div class="Box_of_Lies_item">
@@ -228,12 +266,59 @@
 						</div>
 					</div>
 					
+					<div id="Box_of_Lies_Matt_Damon" class="Box_of_Lies_games">
+						<div class="Box_of_Lies_video_box">
+							<h2 class="guest_name">Matt Damon</h2>
+							<h3 class="episode_number">Ep.509 July 27, 2016</h3>
+							<div class="video_and_arrows">
+								<a href="javascript:void(0)" class="next" onclick="changeGuestLeft(event)">
+									<img src="images\General\left-arrow.png" id="left-arrow-4" class="box_of_lies_arrow_image">
+								</a>
+								<iframe class="box_of_lies_video" src="https://www.youtube.com/embed/2WqUARap7T0" frameborder="0" allowfullscreen></iframe>
+								<a href="javascript:void(0)" class="next" onclick="changeGuestRight(event)">
+									<img src="images\General\right-arrow.png" id="right-arrow-4" class="box_of_lies_arrow_image">
+								</a>
+							</div>	
+						</div>
+						<div class="Box_of_Lies_description_box">
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Matt_Damon\damon_first_box_4.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>It's a bonsai tree full of gnomes</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Matt's Lie: "It's a slinky with some kind of phallic symbol on it. It's actually a nose on a slinky. So I guess they're trying to say it's a Pinnochio slinky. It's a lying slinky. I've got a lying slinky."</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Jimmy's Guess: Lie</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Matt: 0  Jimmy: 1</h3>
+									</div>
+								</div>
+							</div>
+							<div class="Box_of_Lies_item">
+								<img src="images\Box_of_Lies\Matt_Damon\damon_second_box_3.png" class="box_of_lies_image">
+								<div class="Box_of_Lies_description">
+									<p>It's a piggy bank filled with cocktail shrimp.</p>
+									<div class="Box_of_Lies_item_truth_or_lie">
+										<p>Jimmy's Lie: "It's an everyday thing. People have it in their house, their office, you could put it on your desk. It's a paperweight of sorts. If you wanted to you could use it as that. It is a hot tub with Luke Skywalker, looks like Luke Skywalker, with Hillary Clinton and Donald Trump. Could be Justin Bieber. Justin Bieber, Donald Trump and Hillary Clinton in a hot tub."</p>
+									</div>
+									<div class="Box_of_Lies_item_contestant_guess">
+										<p>Matt's Guess: Truth</p>
+									</div>
+									<div class="Box_of_Lies_item_score">
+										<h3>Matt: 0  Jimmy: 2</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>
 		
 		<div id="CBS" class="tabcontent">
-			<div id="NBC showbar" class="showbar">
+			<div id="CBS_showbar" class="showbar">
 				<ul>
 					<li>The Late Show with Stephen Colbert</li>
 					<li>The Late Late Show with James Corden</li>
@@ -244,9 +329,13 @@
 		</div>
 		
 		<div id="ABC" class="tabcontent">
+			<div id="ABC_showbar" class="showbar">
+				<ul>
+					<li>Jimmy Kimmel Live!</li>
+				</ul>
+			</div>
 			<h3>ABC</h3>
 			<p>ABC page</p>
 		</div>
-		<a href="javascript:void(0)" class="next" onclick="changeGuest(event)">Next</a>
 	<body>
 <html>

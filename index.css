@@ -4,15 +4,18 @@ body{
 	background-attachment: fixed;
 	background-color: rgba(0, 0, 15, 1);
 	position: relative;
-	top: 370px;
+	top: 363px;
 	font-family: "Sharp Sans", "Helvetica", "Arial", "sans-serif";
+}
+
+ul {
+	margin: 0px;
 }
 
 /* Style the tab */
 div.tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /* Style the links inside the tab */
@@ -24,7 +27,7 @@ div.tab a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 /* Change background color of links on hover */
@@ -37,22 +40,58 @@ div.tab a:focus, .active {
     background-color: #ccc;
 }
 
+.tablinks {
+	border-radius: 10px 10px 0px 0px;
+}
+
+#nbc_tablink{
+	background-color: rgba(104,240,150, 0.9);
+}
+
+#cbs_tablink{
+	background-color: rgba(104,150,240, 0.9);
+}
+
+#abc_tablink{
+	background-color: rgba(240,104,150, 0.9);
+}
+
 /* Style the tab content */
 .tabcontent {
     display: none;
     border: 1px solid #ccc;
     border-top: none;
 	background-color: rgba(81, 81, 163, 0.3);
-	position: relative;
-	top: -16px;
 	color: white;
 }
 
 .showbar {
-	background-color: #ccc;
+	padding: 10px;
+	font-size: 17px;
 }
 
-.show_link {
+.gamebar {
+	padding: 8px;
+	font-size: 15px;
+}
+
+#NBC_showbar {
+	background-color: rgba(104,240,150, 0.9);
+}
+
+#CBS_showbar {
+	background-color: rgba(104,150,240, 0.9);
+}
+
+#ABC_showbar {
+	background-color: rgba(240,104,150, 0.9);
+}
+
+#Tonight_Show_gamebar {
+	background-color: rgba(149,189,163, 0.9);
+}
+
+.show_link, .game_link {
 	display: inline;
 	list-style-type: none;
 	padding: 0px 30px 0px 30px;
@@ -60,11 +99,17 @@ div.tab a:focus, .active {
 }
 
 .gameHeader {
-	background-color: #fff;
-	color: #000;
-	padding: 0px 0px 0px 0px;
-	position: relative;
-	top: -20px;
+	background-color: black;
+	color: red;
+	display: block;
+	padding: 5px;
+	border: 15px solid #F3F0C9;
+}
+
+.game_header_name {
+	margin:  35px 0px 0px 0px;
+	text-align: right;
+	font-size: 50px;
 }
 
 .guest_list_box {
@@ -115,10 +160,10 @@ div.tab a:focus, .active {
 }
 
 .box_of_lies_video {
-	display: block;
+	display: inline;
 	margin: 10px auto;
-	width: 854px;
 	height: 480px;
+	width: 854px; 
 }
 
 .box_of_lies_video_box {
@@ -156,10 +201,42 @@ div.tab a:focus, .active {
 	display: block;
 }
 
-#Box_of_Lies_Megyn_Kelly {
+#Box_of_Lies_Megyn_Kelly,
+#Box_of_Lies_Emily_Blunt,
+#Box_of_Lies_Matt_Damon {
 	display: none;
 }
 
-#Box_of_Lies_Emily_Blunt {
-	display: none;
+#left-arrow-1 , #right-arrow-4{
+	visibility: hidden;
+}
+
+.box_of_lies_arrow_image {
+	display: inline;
+	width: 10%;
+	height: 10%;
+	margin: 1% 1% 17% 1%;
+	opacity: 0.5;
+    filter: alpha(opacity=50)
+}
+
+.box_of_lies_arrow_image:hover {
+	opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+a:hover {
+	color: rgba(200, 200, 200, 1);
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.Box_of_Lies_guest_list_items{
+	margin: 5px;
 }
