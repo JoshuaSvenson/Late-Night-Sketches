@@ -89,7 +89,7 @@ function openGame(event, game){
 
 function randomImage(){
 	var randomVal;
-	randomVal = Math.floor(Math.random() * 6) + 1;
+	randomVal = Math.floor(Math.random() * 7) + 1;
 
 	if(randomVal == 1){
 		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Alec_Baldwin.png";
@@ -108,5 +108,8 @@ function randomImage(){
 	}
 	else if(randomVal == 6){
 		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Russell_Crowe.png";
+	}
+	else if(randomVal == 7){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Vince_Vaughn.png";
 	}
 }

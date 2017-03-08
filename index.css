@@ -208,11 +208,12 @@ div.tab a:focus, .active {
 #Box_of_Lies_Emily_Blunt,
 #Box_of_Lies_Matt_Damon,
 #Box_of_Lies_Lena_Dunham,
-#Box_of_Lies_Russell_Crowe {
+#Box_of_Lies_Russell_Crowe,
+#Box_of_Lies_Vince_Vaughn {
 	display: none;
 }
 
-#left-arrow-1 , #right-arrow-6{
+#left-arrow-1 , #right-arrow-7{
 	visibility: hidden;
 }
 
