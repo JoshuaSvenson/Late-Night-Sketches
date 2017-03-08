@@ -73,3 +73,16 @@ function goToGuest(evt, guestNameId){
 	
 	guest.style.display = 'block';
 }
+
+function openGame(event, game){
+	var games_page, chosen_game;
+	games_page = document.getElementsByClassName('games_page');
+	
+	for(i = 0; i < games_page.length; i++){
+		games_page[i].style.display = 'none';
+	}
+	
+	chosen_game = document.getElementById(game);
+	
+	chosen_game.style.display = 'block';	
+}

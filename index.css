@@ -59,10 +59,13 @@ div.tab a:focus, .active {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    border: 1px solid #ccc;
     border-top: none;
 	background-color: rgba(81, 81, 163, 0.3);
 	color: white;
+}
+
+#NBC {
+	display: block;
 }
 
 .showbar {
@@ -203,11 +206,12 @@ div.tab a:focus, .active {
 
 #Box_of_Lies_Megyn_Kelly,
 #Box_of_Lies_Emily_Blunt,
-#Box_of_Lies_Matt_Damon {
+#Box_of_Lies_Matt_Damon,
+#Box_of_Lies_Lena_Dunham {
 	display: none;
 }
 
-#left-arrow-1 , #right-arrow-4{
+#left-arrow-1 , #right-arrow-5{
 	visibility: hidden;
 }
 
@@ -239,4 +243,31 @@ a:hover {
 
 .Box_of_Lies_guest_list_items{
 	margin: 5px;
+}
+
+.games_page {
+	margin: 10px;
+}
+
+.game_tile {
+	background-color: rgba(0, 0, 0, 1);
+	width: 400px;
+	height: auto;
+	border: 2px solid silver;
+	display: block;
+}
+
+.game_tile_image {
+	width: 400px;
+	height:193px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.game_tile_name {
+	text-align: right;
+	padding: 20px 2px 2px 2px;
+	margin: 0px;
+	border: 10px solid #F3F0C9;
+	color: red;
 }

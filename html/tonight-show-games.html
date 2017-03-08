@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Late Night Sketches</title>
+		<link rel="stylesheet " type="text/css" href="../index.css"/>
+		<script type="text/javascript" src="../index.js"></script>
+	</head>
+	
+	<body>
+		<div class="tab">
+		  <a href="javascript:void(0)" id="nbc_tablink" class="tablinks" onclick="openNetwork(event, 'NBC')">NBC</a>
+		  <a href="javascript:void(0)" id="cbs_tablink" class="tablinks" onclick="openNetwork(event, 'CBS')">CBS</a>
+		  <a href="javascript:void(0)" id="abc_tablink" class="tablinks" onclick="openNetwork(event, 'ABC')">ABC</a>
+		</div>
+		
+		<div id="NBC" class="tabcontent">
+			<div id="NBC_showbar" class="showbar">
+				<ul>
+					<a href="tonight-show-games.html">
+						<li class="show_link">The Tonight Show with Jimmy Fallon</li>
+					</a>
+						<li class="show_link">Late Night with Seth Meyers</li>
+				</ul>
+			</div>
+			<div id="Tonight_Show_gamebar" class="gamebar">
+				<ul>
+					<a href="box-of-lies.html">
+						<li class="game_link">Box of Lies</li>
+					</a>
+					<li class="game_link">Flip Cup</li>
+				</ul>
+			</div>
+			<div id="Tonight_Show_Games" class="games_page">
+				<a href="box-of-lies.html">
+					<div id="Box_of_Lies_Tile" class="game_tile">
+						<img src="..\images\GameTiles\TonightShow\BoxOfLies\Alec_Baldwin.png" class="game_tile_image">
+						<h2 class="game_tile_name">Box of Lies</h2>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<div id="CBS" class="tabcontent">
+			<div id="CBS_showbar" class="showbar">
+				<ul>
+					<li>The Late Show with Stephen Colbert</li>
+					<li>The Late Late Show with James Corden</li>
+				</ul>
+			</div>
+			<h3>CBS</h3>
+			<p>CBS page</p>
+		</div>
+		
+		<div id="ABC" class="tabcontent">
+			<div id="ABC_showbar" class="showbar">
+				<ul>
+					<li>Jimmy Kimmel Live!</li>
+				</ul>
+			</div>
+			<h3>ABC</h3>
+			<p>ABC page</p>
+		</div>
+	</body>
+</html>
