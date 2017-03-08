@@ -6,7 +6,7 @@
 		<script type="text/javascript" src="../index.js"></script>
 	</head>
 	
-	<body>
+	<body  onload="randomImage()">
 		<div class="tab">
 		  <a href="javascript:void(0)" id="nbc_tablink" class="tablinks" onclick="openNetwork(event, 'NBC')">NBC</a>
 		  <a href="javascript:void(0)" id="cbs_tablink" class="tablinks" onclick="openNetwork(event, 'CBS')">CBS</a>
@@ -33,7 +33,7 @@
 			<div id="Tonight_Show_Games" class="games_page">
 				<a href="box-of-lies.html">
 					<div id="Box_of_Lies_Tile" class="game_tile">
-						<img src="..\images\GameTiles\TonightShow\BoxOfLies\Alec_Baldwin.png" class="game_tile_image">
+						<img src="#" id="box_of_lies_tile_image" class="game_tile_image">
 						<h2 class="game_tile_name">Box of Lies</h2>
 					</div>
 				</a>

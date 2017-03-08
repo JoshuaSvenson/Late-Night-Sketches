@@ -86,3 +86,27 @@ function openGame(event, game){
 	
 	chosen_game.style.display = 'block';	
 }
+
+function randomImage(){
+	var randomVal;
+	randomVal = Math.floor(Math.random() * 6) + 1;
+
+	if(randomVal == 1){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Alec_Baldwin.png";
+	}
+	else if(randomVal == 2){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Megyn_Kelly.png";
+	}
+	else if(randomVal == 3){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Emily_Blunt.png";
+	}
+	else if(randomVal == 4){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Matt_Damon.png";
+	}
+	else if(randomVal == 5){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Lena_Dunham.png";
+	}
+	else if(randomVal == 6){
+		document.getElementById('box_of_lies_tile_image').src = "../images/GameTiles/TonightShow/BoxOfLies/Russell_Crowe.png";
+	}
+}

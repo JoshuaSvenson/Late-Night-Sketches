@@ -207,11 +207,12 @@ div.tab a:focus, .active {
 #Box_of_Lies_Megyn_Kelly,
 #Box_of_Lies_Emily_Blunt,
 #Box_of_Lies_Matt_Damon,
-#Box_of_Lies_Lena_Dunham {
+#Box_of_Lies_Lena_Dunham,
+#Box_of_Lies_Russell_Crowe {
 	display: none;
 }
 
-#left-arrow-1 , #right-arrow-5{
+#left-arrow-1 , #right-arrow-6{
 	visibility: hidden;
 }
 
